@@ -72,10 +72,16 @@ const Timeline = () => {
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Hi, I'm Infvyr - a passionate frontend developer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cumque dolorem earum est harum impedit laborum, nobis odit porro quibusdam saepe suscipit! Accusamus adipisci aliquam amet consectetur dolore doloremque eaque earum eius, est eveniet fuga, id itaque laudantium natus nesciunt nihil obcaecati omnis possimus quibusdam repellat sed velit vero. A, accusamus, adipisci aliquam dolorem eveniet excepturi fuga incidunt libero minima nisi obcaecati quae saepe! Consectetur maiores natus reiciendis rem!
+Hi, I'm Poornesh A, an Associate Software Engineer at Rectrix Technologies, Bengaluru. 
+I specialize in building responsive, user-friendly web applications using Next.js, React, 
+TypeScript, and modern frontend technologies. I enjoy transforming complex requirements 
+into clean, scalable, and performant user experiences.
       </SectionText>
       <SectionText>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus amet, beatae commodi consequuntur corporis cumque dicta doloremque eaque earum enim ex excepturi exercitationem fuga inventore ipsam, iste itaque laboriosam libero maiores, maxime nisi nulla odio odit omnis possimus quaerat quam quasi rerum sequi tempore temporibus vitae voluptates. Autem doloribus, veritatis! Atque aut inventore natus nulla quaerat suscipit tempore voluptates?
+Originally from Hathyadka, Karnataka, I was raised in a modern home surrounded by coconut 
+and banana plantations, which shaped my strong traditional values and discipline. 
+Outside of work, I enjoy running, kabaddi, and volleyball, and I strongly believe in 
+continuous learning, personal growth, and staying active both mentally and physically.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
