@@ -15,8 +15,8 @@ export const projects = [
     title: "Exdion CSR-Digit",
     description:
       "A web-based CSR management platform built with Next.js and FastAPI, providing organizations a streamlined way to track and manage CSR activities.",
-    image: "./event.jpg",
-    imageWebp: "./event.jpg",
+    image: "./insurance.jpg",
+    imageWebp: "./insurance.jpg",
     images: [],
     tags: ["Next.js", "FastAPI", "PostgreSQL"],
     id: 2,
@@ -27,8 +27,8 @@ export const projects = [
     title: "Exdion Genie",
     description:
       "Real-time communication chatbot using Next.js and react-chatbot-kit for interactive and dynamic responses in enterprise environments.",
-    image: "./native.jpg",
-    imageWebp: "./native.jpg",
+    image: "./bot.jpg",
+    imageWebp: "./bot.jpg",
     images: [],
     tags: ["Next.js", "react-chatbot-kit"],
     id: 3,
