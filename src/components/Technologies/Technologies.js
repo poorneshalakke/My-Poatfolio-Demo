@@ -20,7 +20,7 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with the following technologies in the web development world. Now I'm focused towards React and Next.js.
+      I've worked with the following technologies in the web development world. Currently, I focus on React and Next.js for modern web applications.
     </SectionText>
     <List>
       <ListItem>
@@ -43,19 +43,7 @@ const Technologies = () => (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Next.js, Wordpress
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="6rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            PS, XD, Zeplin, Figma, Avocode
+            FastAPI, Python, PostgreSQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -67,7 +55,7 @@ const Technologies = () => (
           <ListTitle>Other Tools</ListTitle>
           <ListParagraph>
             Experience with <br />
-            WordPress CMS, Jira, Trello, Git
+            Git, GitHub, Bitbucket, Jira, Docker
           </ListParagraph>
         </ListContainer>
       </ListItem>
