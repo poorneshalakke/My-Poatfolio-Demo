@@ -6,6 +6,7 @@ import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
+import GetInTouch from '../components/GetInTouch/GetInTouch';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Timeline />
       <Projects />
       <Technologies />
+      <GetInTouch />
     </Layout>
   );
 };

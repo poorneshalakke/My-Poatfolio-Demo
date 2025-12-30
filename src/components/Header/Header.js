@@ -40,6 +40,11 @@ const Header = () => {
             <NavLink>Technologies</NavLink>
           </Link>
         </li>
+                <li>
+          <Link href={route === '/GetInTouch' ? "/#contact" : '#contact'}>
+            <NavLink>Contact</NavLink>
+          </Link>
+        </li>
       </Div2>
       <SocialMedia />
     </HeaderContainer>
