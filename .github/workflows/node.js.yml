@@ -15,7 +15,8 @@ jobs:
         node-version: [18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -28,3 +29,10 @@ jobs:
 
       - name: Build Next.js app
         run: npm run build
+
+      - name: Lint
+        run: npm run lint || echo "Skipping lint errors"
+
+      # Optional: run tests if you have any
+      #- name: Run tests
+      #  run: npm test
