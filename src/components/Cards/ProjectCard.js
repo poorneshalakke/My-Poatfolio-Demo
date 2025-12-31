@@ -58,9 +58,9 @@ const ProjectCard = ({ item }) => {
         <Button
           type="button"
           aria-label="Open Project Gallery in a modal window"
-          onClick={openModal}
+          // onClick={openModal}
         >
-          <BsPlusCircleFill />
+          {/* <BsPlusCircleFill /> */}
         </Button>
         <ProjectModal
           isOpen={isOpen}
