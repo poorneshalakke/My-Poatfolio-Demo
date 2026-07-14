@@ -1,6 +1,11 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
-import { AiOutlineTool } from "react-icons/ai";
+import {
+  DiReact,
+  DiDatabase,
+  DiGit,
+  DiDocker,
+} from "react-icons/di";
+import { AiOutlineCloudServer } from "react-icons/ai";
 import {
   Section,
   SectionDivider,
@@ -19,43 +24,112 @@ const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
+
     <SectionText>
-      I've worked with the following technologies in the web development world. Currently, I focus on React and Next.js for modern web applications.
+      I develop full-stack web applications with expertise in modern frontend
+      frameworks, scalable backend development, relational databases, cloud
+      deployment, and DevOps practices. I enjoy building responsive,
+      high-performance applications with clean architecture and seamless user
+      experiences.
     </SectionText>
+
     <List>
       <ListItem>
         <picture>
           <DiReact size="6rem" />
         </picture>
+
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
+
           <ListParagraph>
-            Experience with <br />
-            HTML, CSS, JavaScript, React, Next.js
+            HTML5, CSS3, JavaScript (ES6+), TypeScript
+            <br />
+            React.js, Next.js
+            <br />
+            Tailwind CSS, Material UI (MUI)
+            <br />
+            Zustand, React Hooks
+            <br />
+            REST API Integration
+            <br />
+            Responsive Web Design
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
       <ListItem>
         <picture>
-          <DiFirebase size="6rem" />
+          <DiDatabase size="6rem" />
         </picture>
+
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Back-End & Database</ListTitle>
+
           <ListParagraph>
-            Experience with <br />
-            FastAPI, Python, PostgreSQL
+            Python
+            <br />
+            FastAPI
+            <br />
+            JWT Authentication
+            <br />
+            REST API Development
+            <br />
+            PostgreSQL
+            <br />
+            Microsoft SQL Server (MSSQL)
+            <br />
+            SQLAlchemy
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
       <ListItem>
         <picture>
-          <AiOutlineTool size="5.5rem" />
+          <AiOutlineCloudServer size="5.8rem" />
         </picture>
+
         <ListContainer>
-          <ListTitle>Other Tools</ListTitle>
+          <ListTitle>Cloud & DevOps</ListTitle>
+
           <ListParagraph>
-            Experience with <br />
-            Git, GitHub, Bitbucket, Jira, Docker
+            Docker
+            <br />
+            AWS ECS
+            <br />
+            AWS ECR
+            <br />
+            GitHub Actions
+            <br />
+            CI/CD Pipelines
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      <ListItem>
+        <picture>
+          <DiGit size="6rem" />
+        </picture>
+
+        <ListContainer>
+          <ListTitle>Tools</ListTitle>
+
+          <ListParagraph>
+            Git
+            <br />
+            GitHub
+            <br />
+            Bitbucket
+            <br />
+            Jira
+            <br />
+            DBeaver
+            <br />
+            pgAdmin
+            <br />
+            Postman
+            <br />
+            VS Code
           </ListParagraph>
         </ListContainer>
       </ListItem>

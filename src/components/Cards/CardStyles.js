@@ -1,69 +1,100 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ImgContainer = styled.figure`
   margin: 0;
   position: relative;
   overflow: hidden;
-`
+  border-radius: 20px;
+`;
 
 export const Picture = styled.picture`
   display: block;
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-`
+  border-radius: 20px;
+`;
 
 export const PictureImg = styled.img`
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 3 / 2;
-`
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+
+  ${ImgContainer}:hover & {
+    transform: scale(1.08);
+  }
+`;
 
 export const TitleContent = styled.div`
-  padding: 0 15px;
-  z-index: 20;
+  padding: 0 22px;
   width: 100%;
-  font-size: 1.75rem;
 `;
 
 export const HeaderThree = styled.h3`
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: ${props => props.theme.colors.primary1};
-  background: none;
-  padding: 2rem 0 .5rem;
-  font-size: ${(props) => props.title ? '3rem' : '2rem'};
-  -webkit-text-fill-color: unset;
-  -webkit-background-clip: unset;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  color: ${({ theme }) => theme.colors.primary1};
+
+  padding: 1.8rem 0 0.6rem;
+
+  font-size: ${({ title }) => (title ? "2.8rem" : "2rem")};
+
+  transition: color 0.3s ease;
+
+  ${ImgContainer}:hover & {
+    color: ${({ theme }) => theme.colors.accent1};
+  }
 `;
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 15px;
-  line-height: 24px;
+  padding: 0 22px;
+
+  line-height: 1.8;
+
+  font-size: 1.55rem;
+
+  color: ${({ theme }) => theme.colors.text};
+
+  opacity: 0.85;
 `;
 
 export const ExternalLinks = styled.a`
   display: inline-flex;
   align-items: center;
-  font-size: 1.6rem;
-  padding: .75rem 1rem;
-  background-image: linear-gradient(270deg,${props => props.theme.colors.background2} 0%, ${props => props.theme.colors.accent1} 100%);
-  color: #fefefe;
-  transition-duration: 0.3s;
-  transition-property: background-image;
+  justify-content: center;
+
+  padding: 0.9rem 1.5rem;
+
+  border-radius: 12px;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    ${({ theme }) => theme.colors.button},
+    ${({ theme }) => theme.colors.accent1}
+  );
+
+  transition: all 0.3s ease;
 
   &:hover {
-    background-image: linear-gradient(270deg, ${props => props.theme.colors.accent1} 0%, ${props => props.theme.colors.background2} 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
   }
-  
-  &.link-to{
+
+  &.link-to {
     margin: auto;
-    min-height: 40px;
-    max-width: 160px;
+    min-height: 44px;
+    min-width: 150px;
   }
 `;
 
@@ -71,53 +102,83 @@ export const TagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 15px;
-`
+
+  padding: 20px;
+`;
 
 export const Tag = styled.li`
-  font-size: 1.5rem;
-  opacity: 0.75;
-  text-decoration: underline;
-`
+  list-style: none;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+
+  background: ${({ theme }) => theme.colors.background2};
+
+  color: ${({ theme }) => theme.colors.primary1};
+
+  border: 1px solid rgba(127, 127, 127, 0.15);
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    background: ${({ theme }) => theme.colors.button};
+
+    color: white;
+  }
+`;
 
 export const Button = styled.button`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-image: none;
-  background-color: transparent;
-  transition: background-color 300ms ease-in-out;
-  
-  svg{
+  inset: 0;
+
+  border: none;
+
+  background: rgba(0, 0, 0, 0);
+
+  transition: background 0.35s ease;
+
+  svg {
     opacity: 0;
     visibility: hidden;
-    transform: scale(0.15);
-    transition: transform 300ms ease-in-out,
-                opacity 300ms ease-in-out,
-                visibility 300ms ease-in-out;
+
+    transform: scale(0.4);
+
+    transition: all 0.35s ease;
   }
-  
-  &:hover{
-    background-image: none;
-    background-color: rgba(0,0,0, .25);
-    
-    svg{
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+
+    svg {
       opacity: 1;
       visibility: visible;
+
       transform: scale(1);
     }
   }
-`
+`;
 
 export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
-  margin-right: auto;
-  margin-top: .5rem;
-  margin-bottom: 2rem;
-  border: 0;
-  background: linear-gradient(121.57deg, ${props => props.theme.colors.button} 18.77%, ${props => props.theme.colors.accent1} 60.15%);
+  width: 70px;
+
+  height: 4px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  margin: 0.7rem auto 2rem auto;
+
+  background: linear-gradient(
+    90deg,
+    ${({ theme }) => theme.colors.button},
+    ${({ theme }) => theme.colors.accent1}
+  );
 `;
