@@ -31,8 +31,8 @@ const Hero = () => (
 
     <LeftSection>
       <SectionTitle main>
-        Hi, I’m Poornesh A <br />
-         Software Engineer
+        Hi, I’m Poornesh<br />
+        Software Engineer
       </SectionTitle>
       <SectionText style={{ paddingBottom: 0 }}>
         I build modern, responsive web applications using Next.js, React, and FastAPI. <br />

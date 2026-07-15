@@ -18,19 +18,19 @@ export const projects = [
     image: "./insurance.jpg",
     imageWebp: "./insurance.jpg",
     images: [],
-    tags: ["Next.js", "FastAPI", "PostgreSQL"],
+    tags: ["Next.js", "FastAPI", "MS SQL"],
     id: 2,
     order: 99,
     mainType: "react",
   },
   {
-    title: "Exdion Genie",
+    title: "Exdion Cash",
     description:
-      "Real-time communication chatbot using Next.js and react-chatbot-kit for interactive and dynamic responses in enterprise environments.",
+      "A healthcare revenue cycle management (RCM) platform built using Next.js, FastAPI, and PostgreSQL to streamline invoice processing, denial management, user administration, and reporting.",
     image: "./bot.jpg",
     imageWebp: "./bot.jpg",
     images: [],
-    tags: ["Next.js", "react-chatbot-kit"],
+    tags: ["Next.js", "FastAPI", "PostgreSQL"],
     id: 3,
     order: 98,
     mainType: "react",
@@ -40,5 +40,5 @@ export const projects = [
 export const TimeLineData = [
   { year: 2024, text: "Started working on Exdion Promax project" },
   { year: 2024, text: "Developed Exdion CSR-Digit platform" },
-  { year: 2025, text: "Launched Exdion Genie chatbot" },
+  { year: 2025, text: "Started developing Exdion Cash platform" },
 ];

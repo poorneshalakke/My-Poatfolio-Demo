@@ -71,18 +71,23 @@ const Timeline = () => {
     <Section id="about">
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-Hi, I'm Poornesh A, an Software Engineer at Rectrix Technologies, Bengaluru. 
-I specialize in building responsive, user-friendly web applications using Next.js, React, 
-TypeScript, and modern frontend technologies. I enjoy transforming complex requirements 
-into clean, scalable, and performant user experiences.
-      </SectionText>
-      <SectionText>
-Originally from Hathyadka, Karnataka, I was raised in a modern home surrounded by coconut 
-and banana plantations, which shaped my strong traditional values and discipline. 
-Outside of work, I enjoy running, kabaddi, and volleyball, and I strongly believe in 
-continuous learning, personal growth, and staying active both mentally and physically.
-      </SectionText>
+<SectionText>
+Hi, I'm Poornesh A, an Software Engineer at Rectrix Technologies, Bengaluru.
+I specialize in full-stack web development using Next.js, React.js, TypeScript,
+FastAPI, PostgreSQL, Microsoft SQL Server, and modern web technologies. I enjoy
+building scalable, secure, and high-performance applications by developing
+responsive user interfaces, designing robust backend APIs, and optimizing
+database performance to deliver seamless user experiences.
+</SectionText>
+
+<SectionText>
+I have worked on enterprise healthcare and insurance applications, contributing
+to projects such as Exdion Promax, Exdion Cash, and Exdion CSR-Digit. Along with
+application development, I have experience with Docker, AWS ECR/ECS deployments,
+Git, REST APIs, and CI/CD workflows. I enjoy solving complex technical
+challenges, continuously learning new technologies, and building reliable
+software that creates real business value.
+</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
