@@ -72,7 +72,7 @@ const Timeline = () => {
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-Hi, I'm Poornesh A, an Associate Software Engineer at Rectrix Technologies, Bengaluru. 
+Hi, I'm Poornesh A, an Software Engineer at Rectrix Technologies, Bengaluru. 
 I specialize in building responsive, user-friendly web applications using Next.js, React, 
 TypeScript, and modern frontend technologies. I enjoy transforming complex requirements 
 into clean, scalable, and performant user experiences.
