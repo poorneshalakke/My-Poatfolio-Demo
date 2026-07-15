@@ -31,7 +31,7 @@ const Hero = () => (
 
     <LeftSection>
       <SectionTitle main>
-        Hi, I’m Poornesh A <br />
+        Hi, I’m Poornesh<br />
         Software Engineer
       </SectionTitle>
       <SectionText style={{ paddingBottom: 0 }}>
